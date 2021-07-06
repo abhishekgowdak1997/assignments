@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Increment and decrement</h1>
+<div class="card">
+    <button onclick="decrement()">-</button>
+    <h2 id="root"></h2>
+    <button onclick="increment()">+</button>
+</div>
+    </div>
+    <script >
+        var data=0;
+document.getElementById("root").innerText=data;
+function decrement(){
+    data=data-1;
+    document.getElementById("root").innerText=data;          
+}
+function increment(){
+    data=data+1;
+    document.getElementById("root").innerText=data;
+}
+    </script>
+       
+
+    
+</body>
+</html>

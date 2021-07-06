@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function colorbg(){
+            var x=document.getElementById("selectid");
+            var bgcolor=x.options(x.selectedIndex).value;
+            document.body.style.backgroundColor=bgcolor;
+        }
+    </script>
+    <style>
+    .pink{
+    background-color: pink;
+}
+.red{
+    background-color: red;
+
+}
+.yellow{
+background-color: yellow;
+}
+.orange{
+    background-color: orange;
+}
+    </style>
+</head>
+<body>
+    <center>
+    <select id="selectid">
+        <option value="" selected disabled hidden> select color </option>
+        
+        <option class="pink"> pink</option>
+        <option class="red">red</option>
+        <option class="yellow">yellow</option>
+        <option class="orange">orange</option>
+
+    </select>
+    <button onclick="colorbg()"> change the background</button>
+    </center>
+
+       
+        
+        
+    
+    
+    
+    
+    
+    </select>
+</body>
+</html>
